@@ -30,8 +30,11 @@ jobs:
     - name: check in file
       run: |
         /bin/date > file.txt
+        /bin/date > environment.txt
+        /usr/bin/env >> environment.txt
         git config --global user.email "ehom@acm.org"
         git config --global user.name "ehom"
         git add file.txt
+        git add environment.txt
         git commit -m "updated file"
         git push
