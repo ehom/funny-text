@@ -27,7 +27,8 @@ jobs:
         which ruby
         ruby --version
         which env
-    - name: check in file
+        echo $PATH
+    - name: Push file to GitHub Repo
       run: |
         /bin/date > file.txt
         /bin/date > environment.txt
