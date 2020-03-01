@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '**.json'
-      - '.github/workflows/blank.yaml'
+      - '.github/workflows/blank.yml'
 
 jobs:
   build:
