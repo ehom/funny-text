@@ -23,7 +23,7 @@ jobs:
       run: python --version
     - name: check in file
       run: |
-        file.txt < env
+        touch file.txt
         git add file.txt
         git commit -m "updated file"
         git push
