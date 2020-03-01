@@ -24,6 +24,8 @@ jobs:
     - name: check in file
       run: |
         touch file.txt
+        git config --global user.email "ehom@acm.org"
+        git config --global user.name "ehom"
         git add file.txt
         git commit -m "updated file"
         git push
