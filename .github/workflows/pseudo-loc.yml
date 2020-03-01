@@ -24,6 +24,7 @@ jobs:
         python --version
         which python
         which python3
+        python3 --version
     - name: check in file
       run: |
         /bin/date > file.txt
