@@ -28,6 +28,10 @@ jobs:
         ruby --version
         which env
         echo $PATH
+    - name: Run a Python script
+      run: |
+        #!/usr/local/bin/python3
+        print("Hello from Python 3")
     - name: Push file to GitHub Repo
       run: |
         /bin/date > file.txt
