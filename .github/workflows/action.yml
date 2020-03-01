@@ -32,7 +32,8 @@ jobs:
       run: |
         #!/usr/local/bin/python3
         
-        print("Hello from Python 3")
+        a = 1
+        print(a)
     - name: Push file to GitHub Repo
       run: |
         /bin/date > file.txt
