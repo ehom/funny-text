@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '**.json'
+      - '**.rb'
+      - '**.py'
       - '.github/workflows/**.yml'
 
 jobs:
