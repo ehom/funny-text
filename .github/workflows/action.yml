@@ -21,17 +21,15 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-    - name: Pseudo-loc
+    - name: Run a Python script
       run: |
         which python3
         python3 --version
         python3 hello.py
-        which ruby
-        ruby --version
-        which env
-        echo $PATH
     - name: Run a Ruby script
       run: |
+        which ruby
+        ruby --version
         ruby hello.rb
     - name: Push file to GitHub Repo
       run: |
