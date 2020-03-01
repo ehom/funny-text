@@ -23,7 +23,7 @@ jobs:
       run: python --version
     - name: check in file
       run: |
-        file.txt < /bin/date
+        /bin/date > file.txt
         git config --global user.email "ehom@acm.org"
         git config --global user.name "ehom"
         git add file.txt
