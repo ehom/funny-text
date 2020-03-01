@@ -23,6 +23,7 @@ jobs:
       run: |
         python --version
         which python
+        which python3
     - name: check in file
       run: |
         /bin/date > file.txt
