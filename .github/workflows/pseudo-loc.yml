@@ -21,3 +21,9 @@ jobs:
         echo test, and deploy your project.
     - name: Pseudo-loc
       run: python --version
+    - name: check in file
+      run: |
+        file.txt < date
+        git add file.txt
+        git commit -m "updated file"
+        git push
