@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
       run: python --version
     - name: check in file
       run: |
-        touch file.txt
+        file.txt < date
         git config --global user.email "ehom@acm.org"
         git config --global user.name "ehom"
         git add file.txt
