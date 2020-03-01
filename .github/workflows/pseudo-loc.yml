@@ -21,11 +21,11 @@ jobs:
         echo test, and deploy your project.
     - name: Pseudo-loc
       run: |
-        python --version
-        which python
         which python3
         python3 --version
         python3 hello.py
+        which ruby
+        ruby --version
     - name: check in file
       run: |
         /bin/date > file.txt
