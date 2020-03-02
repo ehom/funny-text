@@ -22,14 +22,14 @@ jobs:
         set +x
         echo Add other actions to build,
         echo test, and deploy your project.
-    - name: Set up Spacy
+    - name: Set up SpaCy (NLP for Python)
       run: pip3 install spacy
-    - name: Run a Python script
+    - name: Run the Python script
       run: |
         which python3
         python3 --version
         python3 hello.py
-    - name: Run a Ruby script
+    - name: Run the Ruby script
       run: |
         which ruby
         ruby --version
